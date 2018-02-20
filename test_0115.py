@@ -1,5 +1,10 @@
-a = ['あ','い','う','え','お']
-b = [1,2,3,4,5]
+import numpy as np
 
-for ai,bi in zip(a,b):
+a = ['あ','い','う','え','お']
+b = np.arange(6)
+print(b)
+c = b.reshape(1,6)
+print(c[0,1])
+
+for ai,bi in zip(a, c[0,:]):
   print(ai,bi)
